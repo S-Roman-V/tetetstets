@@ -35,6 +35,13 @@ $( document ).ready(function() {
             $('.header-tel-city').removeClass('d-none');
            }
         })
+
+        $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            gutter: 0
+            });
     });
 
 
