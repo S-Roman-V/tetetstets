@@ -124,6 +124,7 @@ body {
   height: 92px;
   position: relative;
   z-index: 3;
+  background: #FCFCFC;
 }
 
 .desc-nav {
