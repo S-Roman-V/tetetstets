@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="./scss/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link href="./scss/main.css" rel="stylesheet">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+
+<body>
+    <!-- Осн. меню -->
+    <nav class="navbar navbar-descr d-none d-sm-block">
+        <div class="container-fluid navbar-descr-c">
+            <!-- Лого -->
+            <a class="navbar-descr-brand" href="#">LOGO</a>
+
+            <button class="navbar-descr-toggler navbar-toggler" id="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Меню -->
+            <div class="navbar-descr-menu navbar-collapse mb-5">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-1"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-2"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-3"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-4"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-5"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-6"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-7"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-8"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-9"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-10"/>
+                            </svg>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form id="header-search-main" action="" method="GET" class="search-form-main">
+                <input type="text" class="search-string-main" name="search_string" autocomplete="off " value="" placeholder="Поиск">
+                <button class="search-btn-main" type="submit" title="Поиск">
+                    <svg>
+                        <use xlink:href="./img/main.svg?mod=111#search-12"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- Моб. меню -->
+    <nav class="navbar navbar-expand-lg d-block d-sm-none navbar-mob">
+        <div class="container-fluid">
+            <!-- Кнопка открытия меню -->
+            <button class="navbar-toggler" id="myCollapsible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Лого -->
+            <a class="navbar-brand" href="#">LOGO</a>
+            
+            <div class="add-bsk-m">
+                <svg class="header-basket-btn">
+                    <use xlink:href="./img/main.svg?mod=11#bsk-11"/>
+                </svg>
+                <div class="ad-bsk-count">3</div>
+            </div>
+                
+         </div>
+         <div class="mob-menu-additional collapse" id="navbarSupportedContent">
+
+         <div class="container-fluid">
+            <!-- Тел. + город-->
+            <div class="header-tel-city container-fluid ">
+                <div class="nav-city">Дмитров</div> <br/>
+                <a class="nav-tel" href="tel:89256455711"> 8 (925) 645-57-11</a><br/>
+                <a class="nav-tel" href="tel:84999999999">8 (499) 999-99-99</a><br/>
+            </div>
+
+            <!-- Меню -->
+            <div class="navbar-collapse mb-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-1"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-2"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-3"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-4"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-5"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-6"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-7"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-8"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-9"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="header-basket-btn">
+                                <use xlink:href="./img/main.svg?mod=1#menu-10"/>
+                            </svg>
+                            Lorem
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form id="header-search" action="" method="GET" class="search-form">
+                <input type="text" class="search-string" name="search_string" autocomplete="off " value="" placeholder="Поиск">
+                <button class="search-btn" type="submit" title="Поиск">
+                    <svg>
+                        <use xlink:href="./img/main.svg?mod=111#search-12"/>
+                    </svg>
+                </button>
+            </form>
+
+           
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">О компании</a>
+                            <a class="nav-link" href="#">Отзывы</a>
+                            <a class="nav-link" href="#">Коммерческим покупателям</a>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+        </div>
+         
+         </div>
+    </nav>
+    
+
+        <!-- Слайдер-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="main-sl-for-img" style="background-image: url(img/main_sl.jpg)"></div>
+                    <div class="container custom-container main-sl-cont">
+                        <div class="d-none d-sm-block">
+                            <a class="btn btn-rose" href="#" role="button">заказать размер</a>
+                            <div class="add-bsk">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+                                    <path d="M7.83784 3.24324H18.4189L17.2432 9.9054H7.05405L3.91892 0.5H0" stroke="#417A82" stroke-linejoin="round"/>
+                                    <circle cx="8.62128" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                    <circle cx="15.676" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide-text">
+                            <h1>Купите <br/> <span>Что-то</span> <br/> и еще <span>шторы</span></h1>
+                            <p>«Lorem» — производитель изделий для внутренней и внешней <br/> lorem</p>
+                            <a class="btn btn-white" href="#" role="button">калькулятор</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="main-sl-for-img" style="background-image: url(img/main_sl.jpg)"></div>
+                    <div class="container custom-container main-sl-cont">
+                        <div class="d-none d-sm-block">
+                            <a class="btn btn-rose" href="#" role="button">заказать размер</a>
+                            <div class="add-bsk">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+                                    <path d="M7.83784 3.24324H18.4189L17.2432 9.9054H7.05405L3.91892 0.5H0" stroke="#417A82" stroke-linejoin="round"/>
+                                    <circle cx="8.62128" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                    <circle cx="15.676" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-slide-text">
+                            <h1>Купите <br/> <span>Что-то</span> <br/> и еще <span>шторы</span></h1>
+                            <p class="mb-5">«Lorem» — производитель изделий для внутренней и внешней <br/> lorem</p>
+                            <a class="btn btn-white" href="#" role="button">калькулятор</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="main-sl-for-img" style="background-image: url(img/main_sl.jpg)"></div>
+                    <div class="container custom-container main-sl-cont">
+                        <div class="d-none d-sm-block">
+                            <a class="btn btn-rose" href="#" role="button">заказать размер</a>
+                            <div class="add-bsk">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+                                    <path d="M7.83784 3.24324H18.4189L17.2432 9.9054H7.05405L3.91892 0.5H0" stroke="#417A82" stroke-linejoin="round"/>
+                                    <circle cx="8.62128" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                    <circle cx="15.676" cy="13.4323" r="1.06757" stroke="#417A82"/>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide-text">
+                            <h1>Купите <br/> <span>Что-то</span> <br/> и еще <span>шторы</span></h1>
+                            <p class="mb-5">«Lorem» — производитель изделий для внутренней и внешней <br/> lorem</p>
+                            <a class="btn btn-white" href="#" role="button">калькулятор</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="swiper-controls custom-container">
+                <div class="swiper-button-prev"></div>
+                <div class="counter">
+                    <div class="current">1</div>/<div class="total">3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="swiper-pagination"></div>
+        
+        </div>   
+
+
+    
+
+</body>
+
+</html>
